@@ -1,0 +1,26 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">    <!--link do bootstrap-->
+</head>
+<body>
+    <h1 style="text-align:center">Edtiando</h1>
+    <div class="container">
+        <a href="/index">Voltar</a>
+        <br><br>
+        <form action="/editar/{{dados[0][0]}}" class="container" method="post">
+            <div class="col-md-6">
+                <input type="text" name="nome" id="nome" value="{{dados[0][1]}}" class="form-control">
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="email" id="email" value="{{dados[0][2]}}" class="form-control">
+            </div>
+            <br>
+            <br><br>
+            <button type="submit" class="btn btn-block btn-success">enviar</button>
+        </form>
+</body>
+</html>
